@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: security-demo
+
+  datasource:
+    url: jdbc:postgresql://localhost:5051/jwt_security
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: public
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
